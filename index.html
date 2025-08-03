@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motherly Medical Model - Rochelle Berry</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="container">
+                <h1>Motherly Medical Model - Memory Recollection</h1>
+                <h2>Rochelle Berry</h2>
+                <div class="patient-info">
+                    <span>DOB: 07/31/1990 (Age 34)</span>
+                    <span>BMI: 35.88</span>
+                    <span>Last Updated: August 3, 2025</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- Emergency Alert -->
+            <div class="alert alert--error">
+                <strong>Medical Emergency:</strong> If experiencing chest pain, difficulty breathing, or other emergency symptoms, call 911 or go to the nearest emergency room immediately.
+            </div>
+
+            <!-- Primary Concerns -->
+            <section class="card primary-concerns">
+                <div class="card__header">
+                    <h3>Primary Concerns (Critical/High Priority)</h3>
+                </div>
+                <div class="card__body">
+                    <div class="concerns-grid">
+                        <div class="concern-item critical">
+                            <div class="concern-header">
+                                <span class="status status--error">CRITICAL</span>
+                                <h4>CPAP Compliance Optimization</h4>
+                            </div>
+                            <p>Current average 4.45h nightly, goal >7h for optimal OSA treatment. Recent improvement to 5.5h weekly average.</p>
+                        </div>
+                        <div class="concern-item critical">
+                            <div class="concern-header">
+                                <span class="status status--error">CRITICAL</span>
+                                <h4>Iron Deficiency Correction</h4>
+                            </div>
+                            <p>Ferritin 12 ng/mL (goal >75). Contributing to RLS symptoms and reactive thrombocytosis.</p>
+                        </div>
+                        <div class="concern-item urgent">
+                            <div class="concern-header">
+                                <span class="status status--warning">URGENT</span>
+                                <h4>Smoking Cessation</h4>
+                            </div>
+                            <p>Currently 3-4 cigarettes/day. Quit date set for 2/10/2025 with nicotine patch therapy.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Diagnoses -->
+            <section class="card">
+                <div class="card__header">
+                    <h3>Key Diagnoses</h3>
+                </div>
+                <div class="card__body">
+                    <div class="diagnoses-list">
+                        <span class="diagnosis-tag">Obstructive Sleep Apnea (mild, AHI 11)</span>
+                        <span class="diagnosis-tag">Restless Legs Syndrome</span>
+                        <span class="diagnosis-tag">Iron Deficiency Anemia</span>
+                        <span class="diagnosis-tag">Thrombocytosis (reactive)</span>
+                        <span class="diagnosis-tag">Vitamin D Deficiency</span>
+                        <span class="diagnosis-tag">PCOS with Menstrual Irregularity</span>
+                        <span class="diagnosis-tag">Depression with Anxiety</span>
+                        <span class="diagnosis-tag">Migraine</span>
+                        <span class="diagnosis-tag">Tobacco Use Disorder</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming/Pending -->
+            <section class="card">
+                <div class="card__header">
+                    <h3>Upcoming/Pending</h3>
+                </div>
+                <div class="card__body">
+                    <div class="appointments-list">
+                        <div class="appointment-item">
+                            <div class="appointment-date">March 18, 2025</div>
+                            <div class="appointment-details">
+                                <strong>Sleep Medicine Follow-up</strong><br>
+                                Dr. Nazzal
+                            </div>
+                        </div>
+                        <div class="appointment-item">
+                            <div class="appointment-date">July 28, 2025</div>
+                            <div class="appointment-details">
+                                <strong>Primary Care Follow-up</strong><br>
+                                Dr. Moyer
+                            </div>
+                        </div>
+                        <div class="appointment-item">
+                            <div class="appointment-date">August 2025</div>
+                            <div class="appointment-details">
+                                <strong>OBGYN Follow-up</strong><br>
+                                NP Kaylor - PCOS management
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacts -->
+            <section class="card">
+                <div class="card__header">
+                    <h3>Contacts</h3>
+                </div>
+                <div class="card__body">
+                    <div class="contacts-grid">
+                        <div class="contact-item">
+                            <strong>Dr. Victoria Moyer (PCP)</strong><br>
+                            <a href="tel:7657763800">(765) 776-3800</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Dr. Khaled Nazzal (Sleep Medicine)</strong><br>
+                            <a href="tel:7652368380">(765) 236-8380</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Ashleigh Kaylor, NP (OBGYN)</strong><br>
+                            <a href="tel:7652368457">(765) 236-8457</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Kyle Berry (Spouse)</strong><br>
+                            <a href="tel:5747211666">(574) 721-1666</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Jonah Sands</strong><br>
+                            <a href="tel:7655137718">(765) 513-7718</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Patient Timeline -->
+            <section class="card">
+                <div class="card__header">
+                    <h3>Patient Timeline</h3>
+                </div>
+                <div class="card__body">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">October 2024</div>
+                            <div class="timeline-content">Started CPAP therapy for sleep apnea treatment</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">January 17, 2025</div>
+                            <div class="timeline-content">New patient visit with Dr. Moyer (PCP)</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">January 2025</div>
+                            <div class="timeline-content">Discontinued multiple medications (Metformin, Wellbutrin, birth control)</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">February 2025</div>
+                            <div class="timeline-content">CPAP compliance improving - averaging 5.5h weekly</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clinical Insights -->
+            <section class="card">
+                <div class="card__header">
+                    <h3>Clinical Insights</h3>
+                </div>
+                <div class="card__body">
+                    <div class="insights-container">
+                        <div class="insight-item">
+                            <button class="insight-toggle" data-target="cpap-insight">
+                                CPAP Compliance Optimization (February 2025)
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="insight-content hidden" id="cpap-insight">
+                                <p>Optimal CPAP compliance requires >7 hours of nightly usage. Current 4.45h average indicates significant room for improvement. Recent trends showing improvement to 5.5h weekly average suggest intervention strategies are working. Focus on:</p>
+                                <ul>
+                                    <li>Sleep hygiene optimization</li>
+                                    <li>Mask fit adjustment</li>
+                                    <li>Gradual increase in usage time</li>
+                                    <li>Addressing comfort issues</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="insight-item">
+                            <button class="insight-toggle" data-target="iron-insight">
+                                Iron Deficiency & Restless Legs Connection
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="insight-content hidden" id="iron-insight">
+                                <p>Low ferritin (12 ng/mL) is strongly associated with restless legs syndrome symptoms. The relationship between iron deficiency and RLS is well-established, with improvement in iron stores often leading to symptom reduction. Current ferritin goal >75 ng/mL for optimal RLS management.</p>
+                                <ul>
+                                    <li>Iron supplementation as prescribed</li>
+                                    <li>Vitamin C to enhance absorption</li>
+                                    <li>Avoid calcium/coffee with iron</li>
+                                    <li>Monitor for GI side effects</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="insight-item">
+                            <button class="insight-toggle" data-target="pcos-insight">
+                                PCOS Management Without Metformin
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="insight-content hidden" id="pcos-insight">
+                                <p>Following discontinuation of Metformin, managing PCOS requires alternative approaches focusing on lifestyle modifications and symptom-specific treatments. Weight gain and cycle irregularity may be more challenging to manage without medication.</p>
+                                <ul>
+                                    <li>Low glycemic index diet</li>
+                                    <li>Regular exercise routine</li>
+                                    <li>Weight management strategies</li>
+                                    <li>Hormonal balance monitoring</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lab Results & Trends -->
+            <section class="card">
+                <div class="card__header">
+                    <h3>Lab Results & Metric Trends</h3>
+                </div>
+                <div class="card__body">
+                    <div class="charts-container">
+                        <div class="chart-item">
+                            <h4>Ferritin Trend</h4>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="ferritinChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-item">
+                            <h4>Platelet Count Trend</h4>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="plateletChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-item">
+                            <h4>Vitamin D Trend</h4>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="vitaminDChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-item">
+                            <h4>CPAP Usage Trends</h4>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="cpapChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Medical Information Tabs -->
+            <section class="card">
+                <div class="card__header">
+                    <h3>Detailed Medical Information</h3>
+                </div>
+                <div class="card__body">
+                    <div class="tabs-container">
+                        <div class="tab-buttons">
+                            <button class="tab-button active" data-tab="problems">Problem List</button>
+                            <button class="tab-button" data-tab="encounters">Encounter History</button>
+                            <button class="tab-button" data-tab="medications">Medication History</button>
+                            <button class="tab-button" data-tab="procedures">Procedures & Imaging</button>
+                            <button class="tab-button" data-tab="records">Complete Health Record</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-panel active" id="problems">
+                                <div class="problem-list">
+                                    <div class="problem-item">
+                                        <strong>Obstructive Sleep Apnea</strong> - Active
+                                        <p>Mild OSA with AHI 11. On CPAP therapy since October 2024.</p>
+                                    </div>
+                                    <div class="problem-item">
+                                        <strong>Iron Deficiency Anemia</strong> - Active
+                                        <p>Ferritin 12 ng/mL. Contributing to restless legs and reactive thrombocytosis.</p>
+                                    </div>
+                                    <div class="problem-item">
+                                        <strong>PCOS</strong> - Active
+                                        <p>With menstrual irregularity. Previously on Metformin (discontinued Jan 2025).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel hidden" id="encounters">
+                                <div class="encounter-list">
+                                    <div class="encounter-item">
+                                        <strong>January 17, 2025</strong> - New Patient Visit (Dr. Moyer)
+                                        <p>Comprehensive evaluation, medication review, lab orders</p>
+                                    </div>
+                                    <div class="encounter-item">
+                                        <strong>October 2024</strong> - Sleep Study Follow-up
+                                        <p>CPAP initiation and training</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel hidden" id="medications">
+                                <div class="medication-list">
+                                    <div class="medication-item active">
+                                        <strong>Fluoxetine 20 mg daily</strong> - Active
+                                        <p>For depression and anxiety management</p>
+                                    </div>
+                                    <div class="medication-item active">
+                                        <strong>Cholecalciferol 2,000 IU daily</strong> - Active
+                                        <p>Vitamin D supplementation</p>
+                                    </div>
+                                    <div class="medication-item discontinued">
+                                        <strong>Metformin</strong> - Discontinued Jan 2025
+                                        <p>Previously for PCOS management</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel hidden" id="procedures">
+                                <div class="procedure-list">
+                                    <div class="procedure-item">
+                                        <strong>Sleep Study</strong> - 2024
+                                        <p>Confirmed mild OSA with AHI 11</p>
+                                    </div>
+                                    <div class="procedure-item">
+                                        <strong>Laboratory Studies</strong> - January 2025
+                                        <p>CBC, CMP, Ferritin, Vitamin D, Lipid panel</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel hidden" id="records">
+                                <div class="records-summary">
+                                    <h4>Consolidated Health Record Summary</h4>
+                                    <p>Complete medical record available through patient portal. Includes:</p>
+                                    <ul>
+                                        <li>All laboratory results and trends</li>
+                                        <li>Imaging studies and reports</li>
+                                        <li>Specialist consultation notes</li>
+                                        <li>Procedure reports</li>
+                                        <li>Medication administration records</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Query Tool -->
+            <section class="card">
+                <div class="card__header">
+                    <h3>AI-Powered Query Tool</h3>
+                </div>
+                <div class="card__body">
+                    <div class="query-tool">
+                        <div class="form-group">
+                            <label class="form-label" for="query-input">Ask a question about Rochelle's health record:</label>
+                            <textarea id="query-input" class="form-control" placeholder="e.g., What is the relationship between my iron levels and restless legs?" rows="3"></textarea>
+                        </div>
+                        <button class="btn btn--primary" id="submit-query">Ask Question</button>
+                        <div class="query-response hidden" id="query-response">
+                            <h4>Response:</h4>
+                            <div id="response-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Symptom & Vitals Log -->
+            <section class="card">
+                <div class="card__header">
+                    <h3>Daily Symptom & Vitals Log</h3>
+                </div>
+                <div class="card__body">
+                    <div class="vitals-log">
+                        <div class="log-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="cpap-hours">CPAP Usage (hours)</label>
+                                    <input type="number" id="cpap-hours" class="form-control" step="0.1" min="0" max="12">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="sleep-quality">Sleep Quality (1-10)</label>
+                                    <select id="sleep-quality" class="form-control">
+                                        <option value="">Select...</option>
+                                        <option value="1">1 - Very Poor</option>
+                                        <option value="5">5 - Average</option>
+                                        <option value="10">10 - Excellent</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="fatigue-level">Fatigue Level (1-10)</label>
+                                    <select id="fatigue-level" class="form-control">
+                                        <option value="">Select...</option>
+                                        <option value="1">1 - No Fatigue</option>
+                                        <option value="5">5 - Moderate</option>
+                                        <option value="10">10 - Severe</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="rls-symptoms">RLS Symptoms</label>
+                                    <select id="rls-symptoms" class="form-control">
+                                        <option value="">Select...</option>
+                                        <option value="none">None</option>
+                                        <option value="mild">Mild</option>
+                                        <option value="moderate">Moderate</option>
+                                        <option value="severe">Severe</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn btn--primary" id="log-entry">Log Entry</button>
+                        </div>
+                        <div class="recent-entries">
+                            <h4>Recent Entries</h4>
+                            <div id="entries-list">
+                                <p class="text-secondary">No entries logged yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CPAP-Friendly Sleep Guide -->
+            <section class="card">
+                <div class="card__header">
+                    <h3>CPAP-Friendly Sleep Guide</h3>
+                </div>
+                <div class="card__body">
+                    <div class="sleep-guide">
+                        <div class="guide-section">
+                            <h4>Sleep Hygiene Tips</h4>
+                            <ul>
+                                <li>Maintain consistent sleep and wake times</li>
+                                <li>Create a cool, dark, quiet sleep environment</li>
+                                <li>Avoid caffeine 6 hours before bedtime</li>
+                                <li>Limit screen time 1 hour before sleep</li>
+                            </ul>
+                        </div>
+                        <div class="guide-section">
+                            <h4>CPAP Mask Fitting</h4>
+                            <ul>
+                                <li>Ensure proper seal without over-tightening</li>
+                                <li>Clean mask daily with mild soap</li>
+                                <li>Replace cushions monthly, mask every 3 months</li>
+                                <li>Try different mask styles if current doesn't fit well</li>
+                            </ul>
+                        </div>
+                        <div class="guide-section">
+                            <h4>Troubleshooting Common Issues</h4>
+                            <ul>
+                                <li>Dry mouth: Use heated humidifier</li>
+                                <li>Mask leaks: Adjust straps or try different size</li>
+                                <li>Congestion: Nasal saline rinse before bed</li>
+                                <li>Feeling claustrophobic: Gradual acclimatization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <div class="container">
+                <p><strong>Medical Disclaimer:</strong> This dashboard is for informational purposes only and does not replace professional medical advice. Always consult healthcare providers for medical decisions.</p>
+                <p><strong>Emergency:</strong> For medical emergencies, call 911 immediately.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
